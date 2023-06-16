@@ -1,0 +1,15 @@
+D:\Projetos\Rhitmo\backend\Data\bin\Debug\net6.0\Api.Data.deps.json
+D:\Projetos\Rhitmo\backend\Data\bin\Debug\net6.0\Api.Data.dll
+D:\Projetos\Rhitmo\backend\Data\bin\Debug\net6.0\Api.Data.pdb
+D:\Projetos\Rhitmo\backend\Data\bin\Debug\net6.0\Api.Domain.dll
+D:\Projetos\Rhitmo\backend\Data\bin\Debug\net6.0\Api.Domain.pdb
+D:\Projetos\Rhitmo\backend\Data\obj\Debug\net6.0\Api.Data.csproj.AssemblyReference.cache
+D:\Projetos\Rhitmo\backend\Data\obj\Debug\net6.0\Api.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\Rhitmo\backend\Data\obj\Debug\net6.0\Api.Data.AssemblyInfoInputs.cache
+D:\Projetos\Rhitmo\backend\Data\obj\Debug\net6.0\Api.Data.AssemblyInfo.cs
+D:\Projetos\Rhitmo\backend\Data\obj\Debug\net6.0\Api.Data.csproj.CoreCompileInputs.cache
+D:\Projetos\Rhitmo\backend\Data\obj\Debug\net6.0\Api.Data.csproj.CopyComplete
+D:\Projetos\Rhitmo\backend\Data\obj\Debug\net6.0\Api.Data.dll
+D:\Projetos\Rhitmo\backend\Data\obj\Debug\net6.0\refint\Api.Data.dll
+D:\Projetos\Rhitmo\backend\Data\obj\Debug\net6.0\Api.Data.pdb
+D:\Projetos\Rhitmo\backend\Data\obj\Debug\net6.0\ref\Api.Data.dll

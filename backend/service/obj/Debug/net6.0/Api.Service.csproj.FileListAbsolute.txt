@@ -1,0 +1,15 @@
+D:\Projetos\Rhitmo\backend\service\bin\Debug\net6.0\Api.Service.deps.json
+D:\Projetos\Rhitmo\backend\service\bin\Debug\net6.0\Api.Service.dll
+D:\Projetos\Rhitmo\backend\service\bin\Debug\net6.0\Api.Service.pdb
+D:\Projetos\Rhitmo\backend\service\bin\Debug\net6.0\Api.Domain.dll
+D:\Projetos\Rhitmo\backend\service\bin\Debug\net6.0\Api.Domain.pdb
+D:\Projetos\Rhitmo\backend\service\obj\Debug\net6.0\Api.Service.csproj.AssemblyReference.cache
+D:\Projetos\Rhitmo\backend\service\obj\Debug\net6.0\Api.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\Rhitmo\backend\service\obj\Debug\net6.0\Api.Service.AssemblyInfoInputs.cache
+D:\Projetos\Rhitmo\backend\service\obj\Debug\net6.0\Api.Service.AssemblyInfo.cs
+D:\Projetos\Rhitmo\backend\service\obj\Debug\net6.0\Api.Service.csproj.CoreCompileInputs.cache
+D:\Projetos\Rhitmo\backend\service\obj\Debug\net6.0\Api.Service.csproj.CopyComplete
+D:\Projetos\Rhitmo\backend\service\obj\Debug\net6.0\Api.Service.dll
+D:\Projetos\Rhitmo\backend\service\obj\Debug\net6.0\refint\Api.Service.dll
+D:\Projetos\Rhitmo\backend\service\obj\Debug\net6.0\Api.Service.pdb
+D:\Projetos\Rhitmo\backend\service\obj\Debug\net6.0\ref\Api.Service.dll
