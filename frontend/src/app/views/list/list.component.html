@@ -1,0 +1,82 @@
+<div>
+  <mat-toolbar ngClass="header">
+    <div class="logo">
+      <img src="../../../assets/logo.svg" />
+    </div>
+    <span class="spacer"></span>
+    <button mat-icon-button>
+      <span class="header-title">Lista</span>
+    </button>
+    <div class="elipse">
+      <img src="../../../assets/elipse.svg" />
+    </div>
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with share icon"
+    >
+      <span class="header-title">Cadastro</span>
+    </button>
+  </mat-toolbar>
+
+  <div class="page-name">
+    <label class="text">Lista</label>
+  </div>
+
+  <div class="container">
+    <label class="title"> Lista de clientes</label><br />
+    <div class="line"></div>
+
+    <div class="input-search">
+      <label class="input-label">Nome do cliente</label> <br />
+      <input
+        class="input"
+        [(ngModel)]="search_name"
+        placeholder="Digite seu nome"
+      />
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>CPF</th>
+            <th>Criado em</th>
+            <th style="border: none"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="active-row">
+            <td>Exemplo de nome</td>
+            <td>exemplo@mail.com</td>
+            <td>000.000.000-00</td>
+            <td>00/00/000</td>
+            <td style="border: none; display: flex">
+              <div class="button-options">
+                <img src="../../../assets/edit.svg" />
+              </div>
+              <div class="button-options">
+                <img src="../../../assets/delete.svg" />
+              </div>
+            </td>
+          </tr>
+          <tr class="new-row">
+            <td>Exemplo de nome</td>
+            <td>exemplo@mail.com</td>
+            <td>000.000.000-00</td>
+            <td>00/00/000</td>
+
+            <td style="border: none">
+              <div class="button-options">
+                <img src="../../../assets/add.svg" />
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>Lucas Vilas Boas - 2023</p>
+</footer>

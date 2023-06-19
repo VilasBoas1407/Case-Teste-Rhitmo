@@ -1,0 +1,65 @@
+.header {
+  background-color: #0a0a3c;
+}
+
+.elipse {
+  margin-top: 4px;
+  margin-left: 24px;
+  margin-right: 4px;
+}
+
+.logo {
+  margin-top: 16px;
+}
+.spacer {
+  margin-right: 80em;
+}
+.header-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: right;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.page-name {
+  background: #d9d9d9;
+  height: 116px;
+  padding-top: 5em;
+}
+
+.text {
+  font-family: "Koh Santepheap";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 18px;
+  text-align: right;
+  color: #000000;
+  margin-left: 5em;
+  margin-top: 8em;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #0a0a3c;
+  padding: 20px;
+  width: 100%;
+}
+
+.footer p {
+  font-family: "Koh Santepheap";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  /* or 75% */
+
+  color: #ffffff;
+}
