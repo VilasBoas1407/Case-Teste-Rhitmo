@@ -1,5 +1,4 @@
 ﻿using Api.Domain.Interfaces.Services;
-using Api.Domain.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Application.Controllers

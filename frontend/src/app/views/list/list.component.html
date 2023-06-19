@@ -4,17 +4,13 @@
       <img src="../../../assets/logo.svg" />
     </div>
     <span class="spacer"></span>
-    <button mat-icon-button>
+    <button mat-icon-button [routerLink]="['']">
       <span class="header-title">Lista</span>
     </button>
     <div class="elipse">
       <img src="../../../assets/elipse.svg" />
     </div>
-    <button
-      mat-icon-button
-      class="example-icon"
-      aria-label="Example icon-button with share icon"
-    >
+    <button mat-icon-button [routerLink]="['register']">
       <span class="header-title">Cadastro</span>
     </button>
   </mat-toolbar>
@@ -65,7 +61,7 @@
             <td>000.000.000-00</td>
             <td>00/00/000</td>
 
-            <td style="border: none">
+            <td style="border: none" [routerLink]="['register']">
               <div class="button-options">
                 <img src="../../../assets/add.svg" />
               </div>
@@ -77,6 +73,6 @@
   </div>
 </div>
 
-<footer class="footer">
+<footer class="footer" style="position: fixed">
   <p>Lucas Vilas Boas - 2023</p>
 </footer>

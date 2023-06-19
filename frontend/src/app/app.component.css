@@ -29,7 +29,7 @@
 
 .page-name {
   background: #d9d9d9;
-  height: 116px;
+  height: 80px;
   padding-top: 5em;
 }
 
@@ -45,12 +45,18 @@
   margin-top: 8em;
 }
 
+.container {
+  margin-left: 22em;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
 .footer {
-  position: fixed;
   bottom: 0;
   background-color: #0a0a3c;
   padding: 20px;
   width: 100%;
+  margin-top: 10em;
 }
 
 .footer p {
@@ -59,7 +65,51 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 18px;
-  /* or 75% */
-
   color: #ffffff;
+}
+
+.row {
+  display: flex;
+}
+
+.title {
+  font-family: "Koh Santepheap";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 18px;
+  color: #377dc0;
+}
+
+.line {
+  border: 2px solid #eef3f7;
+  width: 80%;
+  height: 0%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.radio-button {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #377dc0;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+.radio-button:checked {
+  background: #ffffff;
+  border: 7px solid #377dc0;
+}
+
+.radio-label {
+  font-family: "Koh Santepheap";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  margin-top: 4px;
+  color: #000000;
 }
