@@ -1,4 +1,4 @@
-﻿using Api.Domain.Model;
+﻿using Api.Domain.Entity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Api.Data.Context
@@ -10,7 +10,7 @@ namespace Api.Data.Context
         {
             optionsBuilder.UseInMemoryDatabase(databaseName: "RhitmoTest");
         }
-        public DbSet<UserModel> User { get; set; }
+        public DbSet<UserEntity> User { get; set; }
     }
 }
 

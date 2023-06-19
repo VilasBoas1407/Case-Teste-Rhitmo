@@ -1,9 +1,11 @@
-﻿using Api.Domain.Model;
+﻿using Api.Domain.Entity;
+using Api.Domain.Model;
 
 namespace Api.Domain.Interfaces.Repositories
 {
     public interface IUserRepository
     {
-        List<UserModel> GetUsers(string name);
+        List<UserEntity> GetUsers(string name);
+        void AddUser(UserEntity user);
     }
 }

@@ -49,3 +49,6 @@ D:\Projetos\Rhitmo\backend\application\obj\Debug\net6.0\refint\Api.Application.d
 D:\Projetos\Rhitmo\backend\application\obj\Debug\net6.0\Api.Application.pdb
 D:\Projetos\Rhitmo\backend\application\obj\Debug\net6.0\Api.Application.genruntimeconfig.cache
 D:\Projetos\Rhitmo\backend\application\obj\Debug\net6.0\ref\Api.Application.dll
+D:\Projetos\Rhitmo\backend\application\bin\Debug\net6.0\AutoMapper.dll
+D:\Projetos\Rhitmo\backend\application\bin\Debug\net6.0\FluentValidation.dll
+D:\Projetos\Rhitmo\backend\application\bin\Debug\net6.0\Newtonsoft.Json.dll

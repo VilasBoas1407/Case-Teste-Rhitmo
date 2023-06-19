@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PT+qJUzzgIavxj47MhgMJQV31jtLwaSgYfALjKS0Nv2x8B25TIV3Vkmykg8xfO5KQ7X+Kp+apGdnHdZDh8VgWA==",
+  "dgSpecHash": "5AHQNEKkNcHx0PTdj46IBiQlCg+T36GQD3mKYbuMg+7+nWDW2ZzxAImwrovgEUBu/k4bQuZSlzW1Cnyp3PMw4Q==",
   "success": true,
   "projectFilePath": "D:\\Projetos\\Rhitmo\\backend\\domain\\Api.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\lucas\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

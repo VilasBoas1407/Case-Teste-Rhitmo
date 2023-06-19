@@ -1,4 +1,5 @@
 ﻿using Api.Data.Context;
+using Api.Domain.Entity;
 using Api.Domain.Interfaces.Repositories;
 using Api.Domain.Model;
 using Microsoft.EntityFrameworkCore;
@@ -7,25 +8,24 @@ namespace Api.Domain.Repository
 {
     public class UserRepository : IUserRepository
     {
-        private DbSet<UserModel> _user;
+        private DbSet<UserEntity> _user;
+        private ApiContext _context;
 
         public UserRepository(ApiContext context)
         {
-            _user = context.User;
-            var users = new List<UserModel>() { new UserModel(){
-                Id =new Guid(),
-                Name = "Lucas Vilas Boas",
-                Cpf = "123.456.789-09",
-                Email = "test@email.com"
-            } };
-            _user.AddRange(users);
-            context.SaveChanges();
-
+            _user = context.Set<UserEntity>();
+            _context = context;
         }
 
-        public List<UserModel> GetUsers(string name)
+        public void AddUser(UserEntity user)
         {
-            var users = new List<UserModel>();
+            _user.Add(user);
+            _context.SaveChanges();
+        }
+
+        public List<UserEntity> GetUsers(string name)
+        {
+            var users = new List<UserEntity>();
 
             if (string.IsNullOrEmpty(name))
                 users = _user.ToList();
