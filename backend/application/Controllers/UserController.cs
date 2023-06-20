@@ -74,24 +74,26 @@ namespace Api.Application.Controllers
 
 
         /// <summary>
-        /// Edit a user register
+        /// Update a user register
         /// </summary>
-        /// <param name="user">User data to register</param>
-        /// <response code="200">Return user data</response>
+        /// <param name="user">User data to update</param>
+        /// <response code="204">User update</response>
         /// <response code="400">Return a erro message from data validation</response>
         [HttpPut]
-        public IActionResult PutUser([FromBody] InsertUserModel userModel)
+        public IActionResult PutUser([FromBody] UpdateUserModel user)
         {
-            var response = userService.RegisterUser(userModel);
+            var response = userService.UpdateUser(user);
 
             if (response.IsSuccessStatusCode)
                 return NoContent();
+            else if(response.StatusCode == HttpStatusCode.NotFound)
+                return NotFound(new { message = response.Content.ReadAsStringAsync().Result });
             else
             {
                 var content = new { message = response.Content.ReadAsStringAsync().Result };
                 return BadRequest(content);
             }
-
+    
         }
 
         /// <summary>

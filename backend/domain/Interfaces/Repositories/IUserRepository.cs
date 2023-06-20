@@ -6,6 +6,7 @@ namespace Api.Domain.Interfaces.Repositories
     {
         List<UserEntity> GetUsers(string name);
         UserEntity GetUser(Guid id);
+        bool ExistUser(Guid id);
         void UpdateUser(UserEntity user);
         void DeleteUser(UserEntity user);
         Guid AddUser(UserEntity user);

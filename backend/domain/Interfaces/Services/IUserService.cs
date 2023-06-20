@@ -7,7 +7,7 @@ namespace Api.Domain.Interfaces.Services
         List<UserModel> GetUsers(string name);
         UserModel GetUser(Guid IdUser);
         HttpResponseMessage RegisterUser(InsertUserModel userModel);
-        HttpResponseMessage UpdateUser();
+        HttpResponseMessage UpdateUser(UpdateUserModel userModel);
         HttpResponseMessage DeleteUser(Guid IdUser);
 
     }

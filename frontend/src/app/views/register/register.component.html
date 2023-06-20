@@ -54,7 +54,12 @@
           class="input"
           placeholder="Selecione o estado"
           [(ngModel)]="userData.state"
-        ></select>
+          (change)="getCities(userData.state)"
+        >
+          <option *ngFor="let state of states" [value]="state.value">
+            {{ state.name }}
+          </option>
+        </select>
       </div>
     </div>
 
@@ -73,7 +78,11 @@
           class="input"
           placeholder="Selecione a cidade"
           [(ngModel)]="userData.city"
-        ></select>
+        >
+          <option *ngFor="let city of cities" [value]="city.name">
+            {{ city.name }}
+          </option>
+        </select>
       </div>
     </div>
   </div>
@@ -122,13 +131,18 @@
             [(ngModel)]="userData.monthExpiration"
           >
             <option>Mês</option>
+            <option *ngFor="let month of months" [value]="month.value">
+              {{ month.description }}
+            </option>
           </select>
           <select
             class="input"
             placeholder="Ano"
             [(ngModel)]="userData.yearExpiration"
           >
-            <option>Ano</option>
+            <option *ngFor="let year of years" [value]="year">
+              {{ year }}
+            </option>
           </select>
         </div>
       </div>
@@ -148,7 +162,7 @@
         <input
           class="input"
           placeholder="XXX"
-          [(ngModel)]="userData.cardSafeCode"
+          [(ngModel)]="userData.safeCode"
         />
       </div>
     </div>

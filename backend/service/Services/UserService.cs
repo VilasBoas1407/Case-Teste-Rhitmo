@@ -59,7 +59,7 @@ namespace Api.Service.User
 
             if (validationResult.IsValid)
             {
-                
+
                 var userEntity = mapper.Map<UserEntity>(userModel);
                 userEntity.ExperirationData = $"{userModel.MonthExpiration}/{userModel.YearExpiration}";
                 var userID = _userRepository.AddUser(userEntity);
@@ -76,9 +76,33 @@ namespace Api.Service.User
             return response;
         }
 
-        public HttpResponseMessage UpdateUser()
+        public HttpResponseMessage UpdateUser(UpdateUserModel user)
         {
-            throw new NotImplementedException();
+            var response = new HttpResponseMessage();
+            var validator = new UpdateUserValidator();
+
+            var validationResult = validator.Validate(user);
+
+            if (validationResult.IsValid)
+            {
+                if (_userRepository.ExistUser(user.Id)) {
+                    var userEntity = mapper.Map<UserEntity>(user);
+                    userEntity.ExperirationData = $"{user.MonthExpiration}/{user.YearExpiration}";
+                    _userRepository.UpdateUser(userEntity);
+                }
+                else
+                {
+                    response.StatusCode = HttpStatusCode.NotFound;
+                    response.Content = new StringContent("Usuário não encontrado");
+                }
+            }
+            else
+            {
+                response.StatusCode = HttpStatusCode.BadRequest;
+                response.Content = new StringContent(validationResult.Errors[0].ToString());
+            }
+            return response;
+
         }
     }
 }

@@ -52,5 +52,10 @@ namespace Api.Domain.Repository
 
             return users;
         }
+
+        public bool ExistUser(Guid id)
+        {
+            return _user.Any(x => x.Id == id);
+        }
     }
 }

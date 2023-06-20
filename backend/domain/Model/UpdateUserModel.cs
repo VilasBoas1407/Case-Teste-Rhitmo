@@ -3,9 +3,11 @@ using Newtonsoft.Json;
 
 namespace Api.Domain.Model
 {
-
-    public class InsertUserModel
+    public class UpdateUserModel
     {
+
+        [JsonProperty("id")]
+        public Guid Id { get; set; }
         [JsonProperty("name")]
         public string Name { get; set; }
         [JsonProperty("email")]
@@ -31,7 +33,7 @@ namespace Api.Domain.Model
         [JsonProperty("monthExpiration")]
         public int MonthExpiration { get; set; }
         [JsonProperty("yearExpiration")]
-        public int YearExpiration{get;set;}
+        public int YearExpiration { get; set; }
 
     }
 }

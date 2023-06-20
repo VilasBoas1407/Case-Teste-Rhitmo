@@ -12,7 +12,7 @@ namespace Api.Domain.Model
         public string Address { get; set; }
         public string CEP { get; set; }
         public string City { get; set; }
-        public PaymentType PaymentType { get; set; }
+        public int PaymentType { get; set; }
         public string CardName { get; set; }
         public string CardNumber { get; set; }
         public DateTime ExperirationData{ get; set; }

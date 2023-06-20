@@ -28,8 +28,8 @@ export class UserService {
       this.httpOptions
     );
   }
-  public AddUser(User: any): Observable<any> {
-    return this.httpClient.post<any>(this.apiUrl, User, this.httpOptions);
+  public AddUser(user: any): Observable<any> {
+    return this.httpClient.post(this.apiUrl, user, this.httpOptions);
   }
 
   public UpdateUser(User: any): Observable<any> {

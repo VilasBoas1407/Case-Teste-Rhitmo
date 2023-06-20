@@ -28,6 +28,14 @@
             <response code="200">Return user data</response>
             <response code="400">Return a erro message from data validation</response>
         </member>
+        <member name="M:Api.Application.Controllers.UserController.PutUser(Api.Domain.Model.UpdateUserModel)">
+            <summary>
+            Update a user register
+            </summary>
+            <param name="user">User data to update</param>
+            <response code="204">User update</response>
+            <response code="400">Return a erro message from data validation</response>
+        </member>
         <member name="M:Api.Application.Controllers.UserController.DeleteUser(System.Guid)">
             <summary>
             Delete user by ID
