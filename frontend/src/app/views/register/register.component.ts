@@ -81,7 +81,6 @@ export class RegisterComponent {
   }
 
   getCities(state: string) {
-    console.log(state);
     this.CepService.GetCities(state).subscribe((data) => {
       data.forEach((city: any) => {
         this.cities.push({
@@ -91,10 +90,20 @@ export class RegisterComponent {
       });
     });
   }
+
   register() {
     console.log(this.userData);
-    this.UserService.AddUser(this.userData).subscribe((data) => {
-      console.log(data);
-    });
+    this.UserService.AddUser(this.userData).subscribe(
+      (data) => {
+        try {
+          alert('Usuário Cadastrado com sucesso!');
+        } catch (ex) {
+          alert('Erro ao cadastrar o usuário' + ex);
+        }
+      },
+      (response) => {
+        alert('Erro ao cadastrar o usuário');
+      }
+    );
   }
 }
