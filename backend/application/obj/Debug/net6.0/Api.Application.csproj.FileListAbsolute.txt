@@ -52,3 +52,5 @@ D:\Projetos\Rhitmo\backend\application\obj\Debug\net6.0\ref\Api.Application.dll
 D:\Projetos\Rhitmo\backend\application\bin\Debug\net6.0\AutoMapper.dll
 D:\Projetos\Rhitmo\backend\application\bin\Debug\net6.0\FluentValidation.dll
 D:\Projetos\Rhitmo\backend\application\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Projetos\Rhitmo\backend\application\bin\Debug\net6.0\Api.Application.xml
+D:\Projetos\Rhitmo\backend\application\obj\Debug\net6.0\Api.Application.xml

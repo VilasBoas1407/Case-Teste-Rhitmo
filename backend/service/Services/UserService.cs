@@ -20,9 +20,26 @@ namespace Api.Service.User
             mapper = _mapper;
         }
 
-        public HttpResponseMessage DeleteUser()
+        public HttpResponseMessage DeleteUser(Guid id)
         {
-            throw new NotImplementedException();
+            var user = _userRepository.GetUser(id);
+            var response = new HttpResponseMessage(HttpStatusCode.NoContent);
+
+            if (user == null)
+            {
+                response.StatusCode = HttpStatusCode.NotFound;
+                return response;
+            }
+
+            _userRepository.DeleteUser(user);
+
+            return response;
+        }
+
+        public UserModel GetUser(Guid IdUser)
+        {
+            var userEntity = _userRepository.GetUser(IdUser);
+            return mapper.Map<UserModel>(userEntity);
         }
 
         public List<UserModel> GetUsers(string name)
@@ -45,9 +62,10 @@ namespace Api.Service.User
                 
                 var userEntity = mapper.Map<UserEntity>(userModel);
                 userEntity.ExperirationData = $"{userModel.MonthExpiration}/{userModel.YearExpiration}";
-                _userRepository.AddUser(userEntity);
+                var userID = _userRepository.AddUser(userEntity);
 
                 response.StatusCode = HttpStatusCode.OK;
+                response.Content = new StringContent(userID.ToString());
             }
             else
             {

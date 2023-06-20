@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api.Application</name>
+    </assembly>
+    <members>
+        <member name="M:Api.Application.Controllers.UserController.GetUsers(System.String)">
+            <summary>
+            Return a list of users
+            </summary>
+            <param name="name">Search for a specifc user by name</param>
+            <response code="200">Return user data</response>
+            <response code="404">Not found user</response>
+        </member>
+        <member name="M:Api.Application.Controllers.UserController.GetUser(System.Guid)">
+            <summary>
+            Return data from a user by ID
+            </summary>
+            <param name="id">ID user</param>
+            <response code="200">Return user data</response>
+            <response code="404">Not found user</response>
+        </member>
+        <member name="M:Api.Application.Controllers.UserController.PostUser(Api.Domain.Model.InsertUserModel)">
+            <summary>
+            Create a new user register
+            </summary>
+            <param name="user">User data to register</param>
+            <response code="200">Return user data</response>
+            <response code="400">Return a erro message from data validation</response>
+        </member>
+        <member name="M:Api.Application.Controllers.UserController.DeleteUser(System.Guid)">
+            <summary>
+            Delete user by ID
+            </summary>
+            <param name="ID">User ID to delete</param>
+            <response code="204">User deleted</response>
+            <response code="404">User not found</response>  
+        </member>
+    </members>
+</doc>

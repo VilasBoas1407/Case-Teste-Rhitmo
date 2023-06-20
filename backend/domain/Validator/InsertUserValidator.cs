@@ -22,11 +22,11 @@ namespace Api.Domain.Validator
             RuleFor(x => x.State)
                 .NotEmpty().WithMessage("Estado é obrigatório");
 
-            RuleFor(x => x.PostalCode)
+            RuleFor(x => x.CEP)
                 .NotEmpty().WithMessage("CEP é obrigatório");
 
-            RuleFor(x => x.CardSafeCode)
-                .NotEmpty().WithMessage("Código de segura é obrigatório");
+            RuleFor(x => x.SafeCode)
+                .NotEmpty().WithMessage("Código de segurança é obrigatório");
 
             RuleFor(x => x.CardName)
                 .NotEmpty().WithMessage("Nome cartão é obrigatório");
@@ -41,7 +41,7 @@ namespace Api.Domain.Validator
                 .NotEmpty().WithMessage("Cidade é obrigatória");
 
             RuleFor(x => x.PaymentType)
-                .NotEmpty().WithMessage("Forma de pagamento é obrigatória");
+                .NotNull().WithMessage("Forma de pagamento é obrigatória");
 
             RuleFor(x => x.MonthExpiration)
                 .NotEmpty().WithMessage("Data de expiração é obrigatória");

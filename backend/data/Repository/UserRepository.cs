@@ -17,9 +17,27 @@ namespace Api.Domain.Repository
             _context = context;
         }
 
-        public void AddUser(UserEntity user)
+        public Guid AddUser(UserEntity user)
         {
             _user.Add(user);
+            _context.SaveChanges();
+            return user.Id;
+
+        }
+
+        public UserEntity GetUser(Guid id)
+        {
+            return _user.Where(x => x.Id.Equals(id)).FirstOrDefault();
+        }
+
+        public void UpdateUser(UserEntity user)
+        {
+            _user.Update(user);
+            _context.SaveChanges();
+        }
+
+        public void DeleteUser(UserEntity user) { 
+            _user.Remove(user);
             _context.SaveChanges();
         }
 

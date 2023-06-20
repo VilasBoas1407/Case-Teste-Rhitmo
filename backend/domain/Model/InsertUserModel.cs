@@ -18,16 +18,16 @@ namespace Api.Domain.Model
         public string City { get; set; }
         [JsonProperty("state")]
         public string State { get; set; }
-        [JsonProperty("postalCode")]
-        public string PostalCode { get; set; }
+        [JsonProperty("cep")]
+        public string CEP { get; set; }
         [JsonProperty("paymentType")]
         public PaymentType PaymentType { get; set; }
         [JsonProperty("cardName")]
         public string CardName { get; set; }
         [JsonProperty("cardNumber")]
         public string CardNumber { get; set; }
-        [JsonProperty("cardSafeCode")]
-        public int CardSafeCode { get; set; }
+        [JsonProperty("SafeCode")]
+        public int SafeCode { get; set; }
         [JsonProperty("monthExpiration")]
         public int MonthExpiration { get; set; }
         [JsonProperty("yearExpiration")]

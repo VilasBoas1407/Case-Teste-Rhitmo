@@ -1,11 +1,13 @@
 ﻿using Api.Domain.Entity;
-using Api.Domain.Model;
 
 namespace Api.Domain.Interfaces.Repositories
 {
     public interface IUserRepository
     {
         List<UserEntity> GetUsers(string name);
-        void AddUser(UserEntity user);
+        UserEntity GetUser(Guid id);
+        void UpdateUser(UserEntity user);
+        void DeleteUser(UserEntity user);
+        Guid AddUser(UserEntity user);
     }
 }
